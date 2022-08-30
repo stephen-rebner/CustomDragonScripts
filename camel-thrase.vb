@@ -2,7 +2,7 @@
 
 Sub Main
 	Dim result As String 'a variable to store the final result
-	Dim dictationAsArray() A String array which will hold the dictation as a collection of strings
+	Dim dictationAsArray() As String 'an array which will hold the dictation as a collection of strings
 
 	'ListVar1 stores what we have just dictated as a string
 	'so use split function to separate all of the individual words into an array
