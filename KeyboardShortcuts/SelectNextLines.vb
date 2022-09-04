@@ -12,9 +12,7 @@ Sub Main
 	
 	' Pressing the home button takes us to the beginning of the line
 	' pressing shift+end selects the whole of the first line
-	selectFirstLineCommand = "{Home}{Shift+End}"
-	
-	SendDragonKeys selectFirstLineCommand
+	SendDragonKeys "{Home}{Shift+End}"
 	
 	' We have already selected the first line with the command above
 	'for that reason, don't select any more lines if the spoken command
@@ -24,11 +22,10 @@ Sub Main
 	'Since we have already selected one line, subtract that from the amount of times we Execute
 	'Shift+Down
 	numberOfTimesToExecute = numberOfTimesToExecute -1
+	
 	' Pressing shift+down selects the next line down
 	'We then also pass on the amount of times we want to execute this command (numberOfTimesToExecuteString)
-	selectNextLineCommand = "{Shift+Down " & numberOfTimesToExecute & "}{Shift+End}"
-	
-	SendDragonKeys selectNextLineCommand
+	SendDragonKeys "{Shift+Down " & numberOfTimesToExecute & "}{Shift+End}"
 	
 	End If
 	
