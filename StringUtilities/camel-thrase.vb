@@ -14,7 +14,11 @@ Sub Main
 		Dim currentWord As String
 
 		currentWord = dictationAsArray(i)
-
+		
+		'replace all hyphens and apostrophes from the string
+		currentWord = Replace(currentWord, "-", "")
+		currentWord = Replace(currentWord, "'", "")
+		
 		If i = 0 Then
 			currentWord = LCase(Left(currentWord, 1)) & Mid(currentWord, 2)
 		Else
