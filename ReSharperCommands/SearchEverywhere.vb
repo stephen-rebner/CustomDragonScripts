@@ -3,5 +3,5 @@
 Option Explicit
 
 Sub Main
-	SendDragonKeys "{Shift}{Shift}"
+	SendDragonKeys "{Ctrl+t}"
 End Sub

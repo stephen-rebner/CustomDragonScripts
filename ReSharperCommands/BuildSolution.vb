@@ -3,5 +3,5 @@
 Option Explicit
 
 Sub Main
-	SendDragonKeys "{Ctrl+F9}"
+	SendDragonKeys "{Ctrl+Shift+b}"
 End Sub
